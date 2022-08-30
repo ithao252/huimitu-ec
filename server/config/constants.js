@@ -1,0 +1,21 @@
+import dotenv from "dotenv";
+dotenv.config();
+
+const config = {
+ 
+    JWT_EXPIRE: 7*24*60*60*1000,
+
+    MAILING_SERVICE_CLIENT_ID : process.env.MAILING_SERVICE_CLIENT_ID ,
+    MAILING_SERVICE_CLIENT_SECRET : process.env.MAILING_SERVICE_CLIENT_SECRET,
+    MAILING_SERVICE_REFRESH_TOKEN : process.env.MAILING_SERVICE_REFRESH_TOKEN ,
+    SENDER_EMAIL_ADDRESS : process.env.SENDER_EMAIL_ADDRESS,
+    PAYPAL_CLIENT_ID: process.env.PAYPAL_CLIENT_ID,
+    PAYPAL_SECRET: process.env.PAYPAL_SECRET,
+    MOMO_PARTNER_CODE:process.env.MOMO_PARTNER_CODE,
+    MOMO_ACCESS_KEY:process.env.MOMO_ACCESS_KEY,
+    MOMO_SECRET_KEY:process.env.MOMO_SECRET_KEY
+
+
+};
+
+export default config;
